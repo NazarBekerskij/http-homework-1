@@ -1,0 +1,23 @@
+{
+  "name": "http-homework-1",
+  "version": "1.0.0",
+  "description": "",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "scripts": {
+     "dev": "npx parcel src/index.html",
+     "build": "parcel build src/index.html --public-url /http-homework-1/",
+     "predeploy": "npm run build",
+     "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NazarBekerskij/http-homework-1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NazarBekerskij/http-homework-1/issues"
+  },
+  "homepage": "https://github.com/NazarBekerskij/http-homework-1"
+}
