@@ -21,9 +21,13 @@
   },
   "homepage": "https://github.com/NazarBekerskij/http-homework-1",
   "devDependencies": {
+    "@pnotify/core": "^5.2.0",
+    "@pnotify/desktop": "^5.2.0",
+    "@pnotify/mobile": "^5.2.0",
     "gh-pages": "^6.3.0"
   },
   "dependencies": {
+    "lodash.debounce": "^4.0.8",
     "parcel": "^2.16.4"
   }
 }
