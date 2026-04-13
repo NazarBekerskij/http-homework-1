@@ -22,5 +22,8 @@
   "homepage": "https://github.com/NazarBekerskij/http-homework-1",
   "devDependencies": {
     "gh-pages": "^6.3.0"
+  },
+  "dependencies": {
+    "parcel": "^2.16.4"
   }
 }
