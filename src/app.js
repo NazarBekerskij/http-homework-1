@@ -6,7 +6,6 @@ import "@pnotify/core/dist/BrightTheme.css";
 import  debounce from "../node_modules/lodash.debounce"
 
 
-
 const inputRef = document.querySelector(".chekcount")
 const listRef = document.querySelector(".list")
 
@@ -60,19 +59,6 @@ inputRef.addEventListener("input", debounce((event) => {
 function accets(value) {
     return fetch(`https://restcountries.com/v3.1/name/${value}`).then(res => res.json())
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
