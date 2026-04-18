@@ -32,23 +32,26 @@ inputRef.addEventListener("input", debounce((event) => {
             listRef.innerHTML = item 
         }
         
-        if (res.length === 1) {
-            listRef.innerHTML = ""
+   if (res.length === 1) {
+    listRef.innerHTML = "";
 
-             const item = res.map(country => {
-                const languages = Object.values(country.languages)
-                return `<li class="country">
-                <h2>${country.name.common}</h2>
-                <p>Capital: ${country.capital[0]}</p>
-                <p>Population: ${country.population}</p>
-                <h3>Languages:</h3>
-                <ul>${languages.map(() => {})}</ul>
-                </li>`
-            }).join("")
+    const item = res.map(country => {
+        const languages = Object.values(country.languages);
 
-            listRef.innerHTML = item 
+        return `<li class="country">
+            <h2>${country.name.common}</h2>
+            <p><b>Capital:</b> ${country.capital[0]}</p>
+            <p><b>Population:</b> ${country.population}</p>
+            <h3>Languages:</h3>
+            <ul>
+                ${languages.map(lang => `<li>${lang}</li>`).join("")}
+            </ul>
+            <img src="${country.flags.svg}" alt="Flag" width="200">
+        </li>`;
+    }).join("");
 
-        }
+    listRef.innerHTML = item;
+}
     }).catch(() => {
         listRef.innerHTML = ""
     })
